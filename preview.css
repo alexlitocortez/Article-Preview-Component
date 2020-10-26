@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+html {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.box {
+    position: relative;
+    width: 728px;
+    height: 280px;
+    background-color: white;
+    top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 6px 14px 15px -10px hsl(240, 38%, 20%);
+}
+
+.image {
+    width: 282px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.images {
+    max-width: 282px;
+    height: 282px;
+    border-radius: 10px;
+}
+
+.head {
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    width: 346px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: var(--font-bold-weight);
+    color: hsl(217, 19%, 35%);
+    text-align: left;
+}
+
+.paragraph {
+    position: absolute;
+    top: 100px;
+    margin-top: 15px;
+    color: hsl(217, 19%, 35%);
+    line-height: 20px;
+    width: 346px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.text {
+    text-align: center;
+    margin-left: 38px;
+}
+
+#avatar {
+    float: left;
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 200px;
+    left: 320px;
+}
+
+.author-name {
+    position: absolute;
+    top: 200px;
+    right: 270px;
+}
+
+#michelle {
+    white-space: nowrap;
+    position: absolute;
+    left: -83px;
+    font-weight: 700;
+}
+
+#month {
+    font-weight: normal;
+    position: absolute;
+    white-space: nowrap;
+    top: 20px;
+    right: 20px;
+    color: hsl(212, 23%, 69%);
+}
+
+.share {
+    position: relative;
+}
+
+button {
+    background-color: hsl(210, 46%, 95%);
+    background-image: url(images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 5px;
+    left: 180px;
+    width: 30px;
+    height: 30px;
+    border-radius: 90%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+h5 {
+    color: hsl(212, 23%, 69%);
+}
+
+#social {
+    display: flex;
+    width: 246px;
+    height: 57px;
+    position: absolute;
+    top: -75px;
+    right: -300px;
+    padding: 10px 40px;
+    background-color: hsl(217, 19%, 35%);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width:375px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .box {
+        width: 280px;
+        height: 470px;
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .images {
+        height: 199px;
+        width: 370px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+   .text {
+       position: absolute;
+       left: 10px;
+       top: 250px;
+   }
+
+   .head {
+       left: -40px;
+       font-size: 1.3rem;
+       width: 255px;
+       top: -1.5em;
+       left: -27px;
+   }
+
+   .paragraph {
+       width: 240px;
+       left: -25px;
+       top: 3.0em;
+       font-size: 1em;
+   }
+
+   .icon {
+       width: 240px;
+       position: absolute;
+       left: 110px;
+       top: -40px;
+   }
+
+   #avatar {
+       left: -130px;
+   }
+
+   #michelle {
+       left: -50px;
+   }
+
+   #month {
+       left: -50px;
+   }
+
+   #button {
+       left: 90px;
+   }
+
+   #social {
+       left: -130px;
+       top: 2px;
+       width: 283px;
+   }
+
+}
+
+
